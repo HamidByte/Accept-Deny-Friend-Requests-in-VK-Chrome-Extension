@@ -1,0 +1,32 @@
+
+.friends_user_row_border {
+	border: 2px solid;
+    border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+}
+
+.add_requests_btn {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #9147ff;
+    color: white;
+    padding: 0 20px;
+}
+
+.add_requests_btn:hover {
+    background-color: #772ce8;
+}
+
+.primary_color {
+    background-color: #9147ff;
+}
+
+.primary_color:hover {
+    background-color: #772ce8;
+}
+

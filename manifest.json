@@ -1,0 +1,25 @@
+{
+    "name": "Accept-Deny Friend Requests in VK",
+    "description": "Automatically accept or deny multiple friend requests with one click in VK. This tool is helpful for people with many friend requests e.g. public figure profiles. Accepting or rejecting pending requests are always time consuming when it's in hundreds.",
+    "version": "1.0",
+    "browser_action": {
+      "default_icon": {
+        "128": "assets/icon128.png"
+      },
+      "default_title": "Auto Add VK Friends",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+       "128": "assets/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*.vk.com/*", "https://*.vk.com/*"],
+        "js": ["js/jquery.js", "contentScript.js"],
+        "css": ["css/contentScript.css"]
+      }
+    ],
+    "permissions": ["tabs", "activeTab", "*://*.vk.com/*"],
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com/; object-src 'self'",
+    "manifest_version": 2
+  }
